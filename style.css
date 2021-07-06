@@ -1,0 +1,135 @@
+html,
+body {
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 100;
+}
+body {
+  min-width: 320px;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #ffffff;
+}
+.weather {
+  width: 430px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(208, 107, 221, 0.493);
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to top right,
+    rgb(101, 115, 255),
+    rgb(111, 114, 247),
+    rgb(120, 114, 239),
+    rgb(130, 113, 231),
+    rgb(139, 112, 223),
+    rgb(149, 111, 215),
+    rgb(158, 111, 208),
+    rgb(168, 110, 200),
+    rgb(177, 109, 192),
+    rgb(187, 108, 184),
+    rgb(196, 108, 176),
+    rgb(206, 107, 168)
+  );
+}
+
+.weather__box {
+  display: flex;
+}
+
+.weather__city-list {
+  width: 150px;
+  border-radius: none;
+  border: 1px solid #ffffff;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 100;
+  align-self: flex-end;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+option {
+  font-weight: 100;
+  color: grey;
+}
+
+.weather__city-list:focus-visible {
+  outline: none;
+}
+
+.weather__info {
+  width: 180px;
+}
+
+.weather__name,
+.weather__temp {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.weather__temp {
+  margin-bottom: 10px;
+}
+
+.weather__icon-wrapper {
+  text-align: center;
+  margin-left: auto;
+}
+
+.weather__description {
+  margin-top: -20px;
+}
+
+.weather__date {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+/* @media (max-width: 700px) {
+  .weather {
+    width: 100%;
+  }
+} */
+
+@media (max-width: 420px) {
+  body {
+    margin: 0;
+  }
+  .weather {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .weather__box {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .weather__icon-wrapper {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .weather__info {
+    width: auto;
+  }
+
+  .weather__temp {
+    font-size: 60px;
+  }
+
+  .weather__date {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  img {
+    transform: scale(1.3);
+  }
+}
